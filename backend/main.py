@@ -23,7 +23,7 @@ allow_methods=["*"],
 allow_headers=["*"])
 
 @app.post("/ocr")
-async def ocr_endpoint(files: UploadFile = File(...)):
+async def ocr_endpoint(file: UploadFile = File(...)):
     """이미지 파일을 받아 OCR 처리"""
     image = Image.open(BytesIO(await file.read()))
     text = extract_text(image)

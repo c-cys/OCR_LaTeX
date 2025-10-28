@@ -6,3 +6,5 @@ streamlit
 transformers
 torch
 requests
+
+pix2tex[api]
