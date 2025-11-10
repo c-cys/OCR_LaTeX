@@ -8,3 +8,4 @@ torch
 requests
 
 pix2tex[api]
+st_img_pastebutton
