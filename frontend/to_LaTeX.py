@@ -1,4 +1,3 @@
-
 from pix2tex.cli import LatexOCR
 from PIL import Image
 import io
@@ -8,7 +7,7 @@ model = LatexOCR()
 def to_LaTeX(uploaded_file) -> str:
     try:
         # Streamlit의 UploadedFile은 BytesIO 형태이므로 Image로 변환
-        image = Image.open(io.BytesIO(uploaded_file.getvalue()))
+        image = Image.open(io.BytesIO(uploaded_file))
 
         # 결과를 $$로 감싸서 수식 블록 형태로 반환
         return f"$$ {model(image)} $$"
