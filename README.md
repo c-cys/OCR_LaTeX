@@ -19,6 +19,11 @@ project/<br>
 │<br>
 ├── frontend/<br>
 │   └── app.py                      # Streamlit 앱<br>
+│   └── to_LaTex.py                 # LaTeX 수식 변환기<br>
+│   └── pages                       # 하위 페이지<br>
+│         └── editor.py             # LaTeX 수식 편집기<br>
+│         └── paste.py              # 이미지 업로드 시, Ctrl+V로 붙여넣기<br>
+│         └── upload.py             # 이미지 업로드 시, 기기 내장 이미지 업로드<br>
 │<br>
 ├── requirements.txt<br>
 └── README.md<br>
