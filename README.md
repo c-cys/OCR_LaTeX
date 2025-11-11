@@ -51,8 +51,10 @@ streamlit run app.py
 
 ### 5️⃣ 브라우저에서 확인
 
+
 ## 🚀 초기 실행 시 다운로드해야 하는 것
 ```
 tesseract.exe 다운로드 후
 backend/services/ocr_service.py의 8번째 line 변경
 ```
+[참고](https://najakprogram.tistory.com/8)
